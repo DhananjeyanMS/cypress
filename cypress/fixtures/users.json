@@ -1,0 +1,19 @@
+{
+    "validUser": {
+        "username": "admin@example.com",
+        "password": "Admin123!"
+    },
+    "invalidUser": {
+        "username": "wronguser@example.com",
+        "password": "WrongPassword!"
+    },
+    "inactiveUser": {
+        "username": "locked@example.com",
+        "password": "Locked123!"
+    },
+    "invalidemail": {
+        "username": "lockedexample.com",
+        "password": "Locked123!"
+    }
+}
+  
