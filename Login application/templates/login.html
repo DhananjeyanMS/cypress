@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h2>Login</h2>
+
+    <form method="POST" action="/login">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label>
+            <input type="checkbox" id="remember" name="remember"> Remember Me
+        </label><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        // JavaScript code to display flash messages as alerts
+        {% with messages = get_flashed_messages(with_categories=True) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              alert("{{ message }}"); // Display message in alert box
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+    </script>
+</body>
+</html>
