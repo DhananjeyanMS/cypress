@@ -77,5 +77,5 @@ Then
    ```bash
    npx cypress run
    ```
-
+Note : The reports will only be generated if cypress is run headless using above command and generated reports will be under cypress/reports folder as mochawesome###.html which can be viewed in local browser.
 ---
