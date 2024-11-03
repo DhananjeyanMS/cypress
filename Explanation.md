@@ -1,6 +1,6 @@
 ## Cypress test automation framework explanation
 
-When I set out to build this test automation framework in Cypress, my main goal was to create something that would comprehensively cover the various login scenarios in a clear, modular, and reusable way. I chose Cypress for this project because, it provides a very developer-friendly environment for writing and running tests interactively. Here’s a closer look at how the framework is structured, the practices I followed, and the specific scenarios it addresses.
+When I set out to build this test automation framework in Cypress, my main goal was to create something that would comprehensively cover the various login scenarios in a clear, modular, and reusable way. I chose Cypress for this project because, it provides a very developer-friendly environment for writing and running tests interactively and easy installation. Here’s a closer look at how the framework is structured, the practices I followed, and the specific scenarios it addresses.
 
 ### Design Practices Followed
 
