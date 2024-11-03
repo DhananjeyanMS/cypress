@@ -46,6 +46,13 @@ Here’s an overview of what’s covered:
    - **Keyboard navigation**: Ensures that users can navigate the login form using the keyboard (Tab and Enter keys).
    - **Responsive form validation**: Verifies that the login form responds to invalid data inputs and provides feedback for accessibility.
 
+### Challenges
+1. **Handling DOM Elements inside iframes**:
+   - Cypress generally doesn’t support interacting directly with elements inside iframes, which posed a bit of a challenge. To work around this, I used keyboard actions as an alternative way to interact with the application when needed, which allowed me to automate specific steps without needing direct access to iframe elements.
+
+2. Working with Alerts:
+   - Cypress automatically handles browser alerts, but testing the content within alerts is still a challenge. In cases where I needed to verify alert text, I captured the text element and added assertions to validate it. However, for scenarios that required testing multiple consecutive alerts, Cypress struggled to manage these interactions sequentially. This required some experimentation and adjustments in the test flow to handle alerts more effectively.
+
 ### Potential cases for future implementation
 
 Here are some potential areas for improvement:
@@ -61,7 +68,7 @@ Here are some potential areas for improvement:
 3. **Better reporting functionalities**:
    Currently I have implemented mochawesome reports. In future the automation can be scheduled and reports could be parsed into html templates and mailed automatedly to improve efficiency.
 
-### Final Thoughts
+### Final thoughts
 
 This framework was built with flexibility, reusability, and maintainability in mind. By focusing on modular design, clear assertions, and structured test data, I believe this framework is well-prepared to handle a variety of login scenarios.
 Future expansions could continue to enhance its coverage and resilience, making it adaptable to evolving application requirements.
